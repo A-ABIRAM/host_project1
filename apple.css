@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    background-color: black;
+    color: lightgray;
+    width: 100%;
+    height: 40px;
+    font-size: 12pt;
+}
+
+ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 10px 50px;
+}
+
+li {
+    list-style: none;
+    margin-left: 60px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    padding-top: 40px;
+}
+
+#one, #two, #three {
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.main .banner{
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    padding-top: 20px;
+}
+.banner > * {
+    display: flex;
+    justify-content: center;
+}
+
+.banner h1 {
+    font-size: 40pt;
+}
+
+.banner h2 {
+    font-size: 26pt;
+    font-weight: lighter;
+}
+
+.banner a {
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+#one{
+    color: white;
+    background-image: url('app16p.png');
+}
+#two {
+    
+    background-image: url('apple16.jpg');
+}
+
+#three {
+    background-image: url('ipad.jpg');
+}
+
+.category {
+    display: flex;
+}
+
+.category .box {
+    text-align: center;
+    height: 80vh;
+    width: 50%;
+    margin: 10px;
+    background-size: cover;
+    padding-top: 20px;
+    color: white;
+}
+
+.category .box a { 
+    text-decoration: none;
+    font-size: 14pt;
+    padding-top: 20px;
+}
+
+.category1 {
+    display: flex;
+}
+
+.category1 .box {
+    text-align: center;
+    height: 80vh;
+    width: 50%;
+    margin: 10px;
+    background-size: cover;
+    padding-top: 20px;
+    color: white;
+}
+
+.category1 .box a { 
+    text-decoration: none;
+    font-size: 14pt;
+    padding-top: 20px;
+}
+
+#box1 {
+    background-image: url('air4.png');
+}
+
+#box2 {
+    background-image: url('series10.jpg');
+    color: white;
+}
+
+#box3 {
+    background-image: url('mac.jpeg');
+}
+
+#box4 {
+    background-image: url('pod1.jpeg');
+    color: black;
+}
+
+#box2 .label {
+    color: red;
+    font-size: 14pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+.footer {
+    background-color: rgb(216, 217, 217);
+    width: 100%;
+    height: auto;
+}
+
+.footer .container {
+    width: 70%;
+    margin:  auto;
+    padding-top: 20px;
+}
+
+.footer .container > * {
+    font-size: 10pt;
+    color: gray;
+}
+@media only screen and (max-width:800px) {
+    .navbar {
+        position: inline;
+        background-color: black;
+        color: lightgray;
+        width: 100%;
+        height: 40px;
+        font-size: 12pt;
+    }
+    
+    ul {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        padding: 10px ;
+    }
+    
+    li {
+        margin-left: 33px;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .main .banner{
+        text-align: center;
+        height: 60vh;
+        width: 100%;
+        background-size: cover;
+        padding-top: 20px;
+    }
+    
+    .banner a {
+        font-size: 16pt;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #one{
+        background-image: url('app16p.png');
+        color: white;
+      
+    }
+    #two {
+        background-image: url('apple16.jpg');
+      
+    }
+    
+    #three {
+        background-image: url('ipad.jpg');
+        
+    }
+    
+    .category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .category .box {
+        text-align: center;
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+        padding-top: 20px;
+        color: white;
+    }
+    
+    .category .box a { 
+        text-decoration: none;
+        font-size: 14pt;
+        padding-top: 20px;
+    }
+
+    
+    #box1 {
+        background-image: url('air4.png');
+        width: 100%;
+        
+    }
+    
+    #box2 {
+        background-image: url('series10.jpg');
+        color: white;
+    }
+    
+    #box3 {
+        background-image: url('mac.jpeg');
+    }
+    
+    #box4 {
+        background-image: url('pod1.jpeg');
+        color: black;
+    }
+    
+    #box2 .label {
+        color: red;
+        font-size: 14pt;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    a:hover {
+        text-decoration: underline !important;
+    }
+    
+    .footer {
+        background-color: rgb(216, 217, 217);
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer .container {
+        width: 70%;
+        margin:  auto;
+        padding-top: 20px;
+    }
+    
+    .footer .container > * {
+        font-size: 10pt;
+        color: gray;
+    }
+    
+}
+@media only screen and (max-width:550px) {
+    .navbar {
+        position: inline;
+        background-color: black;
+        color: lightgray;
+        width: 100%;
+        height: 40px;
+        font-size: 12pt;
+    }
+    
+    ul {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        padding: 10px ;
+    }
+    
+    li {
+        margin-left: 33px;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .main .banner{
+        text-align: center;
+        height: 40vh;
+        width: 100%;
+        background-size: cover;
+        padding-top: 20px;
+    }
+    
+    .banner a {
+        font-size: 16pt;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #one{
+        background-image: url('app16p.png');
+        color: white;
+      
+    }
+    #two {
+        background-image: url('apple16.jpg');
+      
+    }
+    
+    #three {
+        background-image: url('ipad.jpg');
+        
+    }
+    
+    .category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .category .box {
+        text-align: center;
+        height: 40vh;
+        width: 100%;
+        background-size: cover;
+        padding-top: 20px;
+        color: white;
+    }
+    
+    .category .box a { 
+        text-decoration: none;
+        font-size: 14pt;
+        padding-top: 20px;
+    }
+
+    
+    #box1 {
+        background-image: url('air4.png');
+        width: 100%;
+        
+    }
+    
+    #box2 {
+        background-image: url('series10.jpg');
+        color: white;
+    }
+    
+    #box3 {
+        background-image: url('mac.jpeg');
+    }
+    
+    #box4 {
+        background-image: url('pod1.jpeg');
+        color: black;
+    }
+    
+    #box2 .label {
+        color: red;
+        font-size: 14pt;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    a:hover {
+        text-decoration: underline !important;
+    }
+    
+    .footer {
+        background-color: rgb(216, 217, 217);
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer .container {
+        width: 70%;
+        margin:  auto;
+        padding-top: 20px;
+    }
+    
+    .footer .container > * {
+        font-size: 10pt;
+        color: gray;
+    }
+    
+}
